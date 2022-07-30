@@ -57,7 +57,7 @@ class Items extends Controller {
 
             $res['message_code'] = "items_collected_successfully";
             $res['body']['items'] = $items;
-            $res['body']['items_count'] = count($item->get_all());
+            $res['body']['items_count'] = (int) count($item->get_all());
         } catch (\Exception $error) {
             $res['message_code'] = "no_items_found";
             $res['body']['error'] = $error->getMessage();

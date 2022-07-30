@@ -20,16 +20,16 @@ spl_autoload_register(function($class_name){
 Router::get('/', 'front');
 
 // API Routes
-Router::get('/api', 'items.index');
+Router::get('/htu_api/', 'items.index');
 // Get all items
-Router::get('/api/items', 'items.all');
+Router::get('/htu_api/items', 'items.all');
 // Get single item
-// Router::get('/api/items/$id', 'items.single');
+// Router::get('/htu_api/items/$id', 'items.single');
 // Add new item
-Router::post('/api/items', 'items.create');
+Router::post('/htu_api/items', 'items.create');
 // Update item compleation
-Router::put('/api/items', 'items.update');
+Router::put('/htu_api/items', 'items.update');
 // Delete item.
-Router::delete('/api/items', 'items.delete');
+Router::delete('/htu_api/items', 'items.delete');
 
 Router::redirect();
