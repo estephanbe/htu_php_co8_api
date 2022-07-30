@@ -63,3 +63,13 @@ DELETE '/items' - delete an item.
 }
 - Errors: 400 - if item was not deleted.
 
+## Status Codes:
+- succefull_response: this status for testing api.
+- no_items_found: no item was found in the GET /items.
+- empty_json_response: for sending empty json data.
+- item_name_not_available: for sending json data without name. 
+- new_item_added: when new item is added. 
+- item_id_not_available: for sending json data without id.
+- item_compleation_status_not_available: for sending json data without completed parameter.
+- item_updated: when completed value is updated.
+- item_deleted: when item was deleted. 
