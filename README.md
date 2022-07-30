@@ -31,35 +31,35 @@ GET '/items' - return all the checklist items in the database.
 - Errors: 400 - if no item was found.
 
 POST '/items' - new checklist item
-    - It creates new checklist item and add it to the DB. 
-    - Request Arguemnt: JSON data:{"name": string} 
-    - Returns: An object as per the below:
-    {
-        "success": boolean,
-        "message_code": string,
-        "body": []
-    }
-    - Errors: 400 - if item was not created.
+- It creates new checklist item and add it to the DB. 
+- Request Arguemnt: JSON data:{"name": string} 
+- Returns: An object as per the below:
+{
+    "success": boolean,
+    "message_code": string,
+    "body": []
+}
+- Errors: 400 - if item was not created.
 
 PUT '/items' - update completed status. 
-    - update the completed status of an item to the DB.
-    - Request Arguemnt: JSON data:{"id": integer, "completed": boolean} 
-    - Returns: An object as per the below:
-    {
-        "success": boolean,
-        "message_code": string,
-        "body": []
-    }
-    - Errors: 400 - if item was not updated.
+- update the completed status of an item to the DB.
+- Request Arguemnt: JSON data:{"id": integer, "completed": boolean} 
+- Returns: An object as per the below:
+{
+    "success": boolean,
+    "message_code": string,
+    "body": []
+}
+- Errors: 400 - if item was not updated.
 
 DELETE '/items' - delete an item. 
-    - Delete checklist item from the DB.
-    - Request Arguemnt: JSON data:{"id": integer} 
-    - Returns: An object as per the below:
-    {
-        "success": boolean,
-        "message_code": string,
-        "body": []
-    }
-    - Errors: 400 - if item was not deleted.
+- Delete checklist item from the DB.
+- Request Arguemnt: JSON data:{"id": integer} 
+- Returns: An object as per the below:
+{
+    "success": boolean,
+    "message_code": string,
+    "body": []
+}
+- Errors: 400 - if item was not deleted.
 
