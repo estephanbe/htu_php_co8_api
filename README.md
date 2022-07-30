@@ -6,29 +6,29 @@ This is a Todo List SPA web application. This app contains an API to respond to 
 Below you can find the available endpoints which you can use for the API. The namespace is /htu_api.
 
 GET '/' - tests the api if working. 
-    - Fetches nothing. It just returns an empty body. 
-    - Request Argument: None. 
-    - Returns: An object as per the below:
-    {
-        "success": boolean,
-        "message_code": string,
-        "body": array
-    }
-    - Errors: None. 
+- Fetches nothing. It just returns an empty body. 
+- Request Argument: None. 
+- Returns: An object as per the below:
+{
+    "success": boolean,
+    "message_code": string,
+    "body": array
+}
+- Errors: None. 
 
 GET '/items' - return all the checklist items in the database. 
-    - Fetches collection of items. 
-    - Request Arguemnt: None. 
-    - Returns: An object as per the below:
-    {
-        "success": boolean,
-        "message_code": string,
-        "body": [
-            "items": [object],
-            "items_count": integer
-        ]
-    }
-    - Errors: 400 - if no item was found.
+- Fetches collection of items. 
+- Request Arguemnt: None. 
+- Returns: An object as per the below:
+{
+    "success": boolean,
+    "message_code": string,
+    "body": [
+        "items": [object],
+        "items_count": integer
+    ]
+}
+- Errors: 400 - if no item was found.
 
 POST '/items' - new checklist item
     - It creates new checklist item and add it to the DB. 
