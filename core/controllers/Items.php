@@ -85,6 +85,7 @@ class Items extends Controller {
             $item = new Item();
             $item->add_item($this->request_body['name']);
             $res['message_code'] = 'new_item_added';
+            $res['body'] = $item->get_by_id($item->last_insert_id);
         } catch (\Exception $error) {
             $res['message_code'] = $error->getMessage();
             $res['success'] = false;
